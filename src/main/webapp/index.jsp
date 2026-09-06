@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NexusShop · Modern E‑Commerce</title>
+    <title>NexusShop · modern & friendly</title>
 
     <!-- fonts & icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        /* ========== ROOT VARIABLES ========== */
+        /* ===== ROOT – fresh, soft, airy ===== */
         * {
             margin: 0;
             padding: 0;
@@ -20,23 +20,23 @@
         }
 
         :root {
-            --bg: #f7f6f3;
+            --bg: #f4f2ee;
             --bg-card: #ffffff;
-            --surface: #eeedea;
-            --primary: #1e1e2a;
-            --primary-soft: #2b2b3c;
-            --accent: #c44536;
-            --accent-light: #f0d3cc;
-            --accent-dark: #a83226;
-            --muted: #6b6a7a;
-            --muted-light: #9f9eae;
-            --success: #2b7a62;
-            --warning: #e8b84b;
-            --shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
-            --shadow-hover: 0 18px 44px rgba(0, 0, 0, 0.08);
-            --radius: 20px;
-            --radius-sm: 12px;
-            --transition: 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+            --surface: #eae7e2;
+            --primary: #1f2a3a;
+            --primary-soft: #2c3a4e;
+            --accent: #d47b6a;
+            --accent-light: #f0dfda;
+            --accent-dark: #b9604f;
+            --muted: #6e7a8a;
+            --muted-light: #a4aebd;
+            --success: #3a7d6b;
+            --warning: #e6b85c;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.08);
+            --radius: 24px;
+            --radius-sm: 14px;
+            --transition: 0.25s cubic-bezier(0.2, 0.8, 0.4, 1);
             --container: 1280px;
         }
 
@@ -78,15 +78,7 @@
             width: 100%;
         }
 
-        /* ===== UTILITIES ===== */
-        .muted {
-            color: var(--muted);
-        }
-        .text-center {
-            text-align: center;
-        }
-
-        /* ===== BUTTONS ===== */
+        /* ===== BUTTONS – rounded & soft ===== */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -109,8 +101,8 @@
         .btn-primary:hover {
             background: var(--accent-dark);
             border-color: var(--accent-dark);
-            transform: scale(1.02);
-            box-shadow: 0 12px 28px rgba(196, 69, 54, 0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(212, 123, 106, 0.30);
         }
 
         .btn-secondary {
@@ -121,13 +113,13 @@
         .btn-secondary:hover {
             background: var(--primary-soft);
             border-color: var(--primary-soft);
-            transform: scale(1.02);
+            transform: translateY(-3px);
         }
 
         .btn-outline {
             background: transparent;
             color: var(--primary);
-            border-color: rgba(30, 30, 42, 0.15);
+            border-color: rgba(31, 42, 58, 0.15);
         }
         .btn-outline:hover {
             background: var(--primary);
@@ -136,14 +128,14 @@
         }
 
         .btn-ghost {
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.15);
             color: #fff;
-            border-color: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.30);
             backdrop-filter: blur(4px);
         }
         .btn-ghost:hover {
-            background: rgba(255, 255, 255, 0.22);
-            border-color: rgba(255, 255, 255, 0.45);
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.50);
         }
 
         .btn-sm {
@@ -151,15 +143,15 @@
             font-size: 13px;
         }
 
-        /* ===== HEADER ===== */
+        /* ===== HEADER – light & clean ===== */
         header {
             position: sticky;
             top: 0;
             z-index: 120;
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(30, 30, 42, 0.05);
+            background: rgba(255, 255, 255, 0.80);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(31, 42, 58, 0.04);
         }
 
         .header-inner {
@@ -191,7 +183,7 @@
 
         nav.main-nav ul {
             display: flex;
-            gap: 2px;
+            gap: 4px;
             list-style: none;
             align-items: center;
         }
@@ -270,7 +262,7 @@
         .search-wrap:focus-within {
             border-color: var(--accent);
             background: #fff;
-            box-shadow: 0 0 0 5px rgba(196, 69, 54, 0.08);
+            box-shadow: 0 0 0 5px rgba(212, 123, 106, 0.08);
         }
         .search-wrap input {
             border: 0;
@@ -311,7 +303,7 @@
         #mobileMenu {
             display: none;
             background: #fff;
-            border-top: 1px solid rgba(30, 30, 42, 0.05);
+            border-top: 1px solid rgba(31, 42, 58, 0.04);
             padding: 16px 0 24px;
         }
         #mobileMenu ul {
@@ -338,17 +330,17 @@
             color: var(--muted);
         }
 
-        /* ===== HERO ===== */
+        /* ===== HERO – soft gradient ===== */
         .hero {
             position: relative;
             display: flex;
             align-items: center;
-            min-height: 480px;
-            padding: 60px 0;
+            min-height: 460px;
+            padding: 56px 0;
             border-radius: var(--radius);
             overflow: hidden;
             margin: 24px 28px 0;
-            background: linear-gradient(145deg, #1c1c2a 0%, #2e2e44 100%);
+            background: linear-gradient(145deg, #253141 0%, #3a4a5e 100%);
             box-shadow: var(--shadow);
         }
         .hero::before {
@@ -356,7 +348,7 @@
             position: absolute;
             inset: 0;
             background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-            opacity: 0.28;
+            opacity: 0.20;
             z-index: 0;
         }
         .hero .container {
@@ -367,8 +359,8 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(196, 69, 54, 0.20);
-            color: #f0cac4;
+            background: rgba(212, 123, 106, 0.20);
+            color: #f0d7d0;
             padding: 6px 20px;
             border-radius: 100px;
             font-weight: 600;
@@ -379,8 +371,8 @@
         }
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 52px;
-            font-weight: 700;
+            font-size: 50px;
+            font-weight: 600;
             color: #fff;
             line-height: 1.1;
             max-width: 640px;
@@ -401,7 +393,7 @@
 
         /* ===== SECTION ===== */
         .section {
-            padding: 56px 0;
+            padding: 52px 0;
         }
         .section-header {
             display: flex;
@@ -487,7 +479,7 @@
             margin-top: 4px;
         }
 
-        /* ===== PRODUCTS ===== */
+        /* ===== PRODUCTS – clean cards ===== */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -547,7 +539,7 @@
             width: 38px;
             height: 38px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.90);
             display: grid;
             place-items: center;
             font-size: 16px;
@@ -637,7 +629,7 @@
             background: var(--success);
         }
 
-        /* ===== DEAL ===== */
+        /* ===== DEAL – softer ===== */
         .deal-wrap {
             display: flex;
             gap: 0;
@@ -795,26 +787,29 @@
             color: var(--muted);
         }
 
-        /* ===== NEWSLETTER ===== */
+        /* ===== NEWSLETTER – light & friendly ===== */
         .newsletter-wrap {
-            background: linear-gradient(145deg, var(--primary), var(--primary-soft));
+            background: linear-gradient(145deg, #e3ded7, #d4cec5);
             border-radius: var(--radius);
             padding: 52px 60px;
-            color: #fff;
+            color: var(--primary);
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 32px;
             flex-wrap: wrap;
+            box-shadow: var(--shadow);
         }
         .newsletter-wrap .text h3 {
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 4px;
+            color: var(--primary);
         }
         .newsletter-wrap .text p {
             opacity: 0.75;
             font-size: 15px;
+            color: var(--primary);
         }
         .newsletter-wrap form {
             display: flex;
@@ -830,17 +825,18 @@
             border-radius: 100px;
             border: 0;
             font-size: 15px;
-            background: rgba(255, 255, 255, 0.10);
-            color: #fff;
+            background: rgba(255, 255, 255, 0.60);
+            color: var(--primary);
             transition: var(--transition);
             outline: 2px solid transparent;
+            backdrop-filter: blur(4px);
         }
         .newsletter-wrap form input::placeholder {
-            color: rgba(255, 255, 255, 0.5);
+            color: var(--muted);
         }
         .newsletter-wrap form input:focus {
             outline-color: var(--accent);
-            background: rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.85);
         }
         .newsletter-wrap form .btn {
             background: var(--accent);
@@ -857,13 +853,14 @@
             font-size: 14px;
             opacity: 0.95;
             width: 100%;
+            color: var(--primary);
         }
 
         /* ===== FOOTER ===== */
         footer {
             margin-top: 16px;
             padding: 48px 0 30px;
-            border-top: 1px solid rgba(30, 30, 42, 0.05);
+            border-top: 1px solid rgba(31, 42, 58, 0.04);
         }
         .footer-grid {
             display: grid;
@@ -924,7 +921,7 @@
         .footer-bottom {
             text-align: center;
             padding-top: 24px;
-            border-top: 1px solid rgba(30, 30, 42, 0.05);
+            border-top: 1px solid rgba(31, 42, 58, 0.04);
             color: var(--muted-light);
             font-size: 13px;
         }
@@ -948,7 +945,7 @@
                 font-size: 38px;
             }
             .hero {
-                min-height: 380px;
+                min-height: 360px;
                 margin: 20px 20px 0;
                 padding: 44px 0;
                 border-radius: var(--radius-sm);
@@ -1067,7 +1064,7 @@
             }
             .hero {
                 margin: 12px 12px 0;
-                min-height: 280px;
+                min-height: 270px;
                 padding: 28px 0;
                 border-radius: var(--radius-sm);
             }
@@ -1666,12 +1663,12 @@
             const email = newsletterEmail.value.trim();
             if (!email || !email.includes('@')) {
                 newsletterMsg.textContent = 'Please enter a valid email address.';
-                newsletterMsg.style.color = '#ffb3b3';
+                newsletterMsg.style.color = '#b33a3a';
                 newsletterMsg.style.display = 'block';
                 return;
             }
             newsletterMsg.textContent = '🎉 Thanks for subscribing!';
-            newsletterMsg.style.color = '#a8e6cf';
+            newsletterMsg.style.color = '#2a6b5a';
             newsletterMsg.style.display = 'block';
             newsletterEmail.value = '';
             setTimeout(() => {
@@ -1700,7 +1697,7 @@
             }
         });
 
-        console.log('🚀 NexusShop — modern e‑commerce demo loaded.');
+        console.log('🚀 NexusShop — fresh & friendly UI loaded.');
     </script>
 
 </body>
